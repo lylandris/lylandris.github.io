@@ -116,6 +116,6 @@ categories: 技术日志
 
 到这里基本的架子就可以通过浏览器看到了。
 
-![简单的 Blog 页面]({{ site:url }}/img/2015-08-29-use-git-page-for-blog-in-aliyun-0001.png)
+![基本架子的截图](/images/the-framework-of-my-blog.png)
 
 编辑 `.gitignore` 将 jekyll 产生的临时路径 `_site` 排除在提交列表外，因为 GitHub 自己就有 jekyll 运行。提交改动后，就可以在主页看到更新的日志啦。
