@@ -12,7 +12,7 @@
 
 于是在 2013 年，带着这些目标，由 Google, Intel, Microsoft, Stanford, Princeton, and Barefoot 发起的工作组定义了 P4 语言。
 
-![p4-openflow](2016-09-12-clarifying-the-differences-between-p4-and-openflow-p4-openflow.png)
+![p4-openflow](/images/2016-09-12-clarifying-the-differences-between-p4-and-openflow-p4-openflow.png)
 
 P4 完全改变了网络的这种“自下而上”的模式。相较于交换机告诉我们其有限的支持的能力，P4 为我们提供了一种方式来告诉交换机它应该做什么，以及它应该如何处理数据包。P4 让我们定义报文头供交换机识别、并且告诉交换机这个报文头的匹配方式、以及匹配后的具体行为。例如，我们可以告诉交换机通过对 32 位目的地址执行最长前缀匹配来处理 IPv4 的头，将它发送到下一跳，递减和检查 TTL，更新校验，并在新的以太网封装头。该协议仅仅是在 P4 表示的程序。P4 明确指定了头的匹配精确的方法，并对其执行的操作。事实上，你可以编译 P4 程序直接生成可执行交换机 - 开源编译器已经存在，并允许测试新的交换机功能。许多公司也加入 P4.org 帮助一起移植生态系统。一些已经证明 P4 解决方案，并开始为他们的客户提供工具集。
 
