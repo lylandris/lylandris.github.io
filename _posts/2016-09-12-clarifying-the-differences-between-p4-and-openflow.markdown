@@ -1,4 +1,9 @@
-# 澄清 P4 和 OpenFlow 之间的区别
+---
+layout: post
+title:  "澄清 P4 和 OpenFlow 之间的区别"
+date:   2016-09-12 18:56:10
+categories: 技术日志
+---
 
 有些人问我们 P4 和 OpenFlow 之间有什么区别。是不是 P4 只是 OpenFlow 的另一个版本？在这篇博客中，我们解释了为什么 P4 比 OpenFlow 能够解决更普遍的问题。在 P4 中，OpenFlow 是许多可能的描述转发平面的方案之一。P4 不是像有些人认为的 OpenFlow 2.0。虽然它们都专注于如何开放转发平面，但 P4 致力于解决网络中的不同需求，这个需求就是“编程”数据平面。
 
